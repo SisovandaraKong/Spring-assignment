@@ -49,7 +49,7 @@ public class DemoApplication {
 						break;
 					case 3:
 						System.out.print("Enter student ID: ");
-						studentService.getStudentById(new Scanner(System.in).nextInt());
+						System.out.println(studentService.getStudentById(new Scanner(System.in).nextInt()));
 						break;
 					case 4:
 						System.out.print("Enter student ID to update: ");
