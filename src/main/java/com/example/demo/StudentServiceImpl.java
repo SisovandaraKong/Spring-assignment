@@ -37,7 +37,7 @@ public class StudentServiceImpl implements StudentService {
     public Student updateStudentById(int id, Student student) {
         for ( Student stud : database.students) {
             if (stud.getId() == id) {
-                database.students.set(id, student); // Replace the student at the same position
+                database.students.set(id, student);
                 return student;
             }
         }
