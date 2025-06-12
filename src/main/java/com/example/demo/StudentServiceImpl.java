@@ -7,7 +7,7 @@ import java.util.List;
 
 @Service
 public class StudentServiceImpl implements StudentService {
-    InMemoryDatabase database;
+    InMemoryDatabase database =new InMemoryDatabase();
     @Override
     public String addStudent(Student student) {
         database.students.add(student);

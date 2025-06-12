@@ -43,7 +43,9 @@ public class DemoApplication {
 						break;
 					case 2:
 						System.out.println("View all students");
-						studentService.getAllStudents();
+						for(Student student : studentService.getAllStudents()){
+							System.out.println(student);
+						}
 						break;
 					case 3:
 						System.out.print("Enter student ID: ");

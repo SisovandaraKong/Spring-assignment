@@ -1,12 +1,15 @@
 package com.example.demo;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class InMemoryDatabase {
     List<Student> students =new ArrayList<>(List.of(
             new Student(1, "Dara", "male", 80.2),
@@ -20,5 +23,5 @@ public class InMemoryDatabase {
             new Student(9, "Chenda", "female", 91.4),
             new Student(10, "Mony", "male", 77.8)
     ));
-    public
+
 }
