@@ -46,11 +46,7 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public Integer deleteStudentById(int id) {
-        for (Student student : database.students) {
-            if (student.getId() == id) {
-                database.students.remove(student);
-            }
-        }
+        database.students.removeIf(student -> student.getId() == id);
         return id;
     }
 }
